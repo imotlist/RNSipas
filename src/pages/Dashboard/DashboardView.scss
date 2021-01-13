@@ -1,0 +1,35 @@
+
+.pageContainer {
+    background-color: white;
+    flex: 1;
+    flex-direction: column;
+}
+.pageFooter{
+    position: absolute;
+    flex:0.1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#ffffff;
+    flex-direction:row;
+    height:11%;
+    align-items:center;
+    border-top-width: 1;
+    border-top-color: #6e6e6e;
+}
+
+.pageMenu{
+    align-items:center;
+    justify-content: center;
+    flex:1;
+}
+
+.textMenu{
+    font-size: 11;
+    color: #6e6e6e;
+}
+
+.iconMenu{
+    color:#6e6e6e;
+    font-size: 30;
+}

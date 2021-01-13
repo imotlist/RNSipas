@@ -1,0 +1,39 @@
+.iconShape{    
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+    align-items: center;    
+    background-color: #ffffff;
+    height: 50;
+    width: 50;
+}
+
+.default{
+    @extend.iconShape;
+    background-color: #8f8cff;
+    // vertical-align: middle;
+}
+
+.rounded{
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+}
+
+.iconStaf{
+    // @extend.rounded;
+    // top:50%;
+    margin-top:15;
+    width: 30;
+    height: 20;
+}
+
+.textTipe{
+    position: relative;
+    font-size: 12;
+    text-align: center;
+    margin-top: 5;
+    text-transform: capitalize;
+}

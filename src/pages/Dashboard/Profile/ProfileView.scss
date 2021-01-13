@@ -1,0 +1,95 @@
+.pageContainer{
+    background-color: transparent;
+    height: 800;;
+    // height: 100%;
+}
+
+.headerContent{
+    align-items: center;
+    padding-top: 60;
+    padding-bottom: 20;
+}
+
+.rounded{
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+}
+
+.bgImage{
+    background-color: transparent;
+    // position: absolute;
+    
+    // width: 100;
+    // bottom: 20;
+    // left: 0;
+}
+
+.profileImage{
+    @extend.rounded;
+    width: 70;
+    height: 70;
+}
+
+.textTitle{
+    font-size: 22;
+    color:#fff;
+}
+
+.textSub{
+    @extend.textTitle;
+    font-size: 14;
+}
+
+.textDesc{
+    @extend.textSub;
+    font-size: 10;
+}
+
+.rowContent{
+    flex-direction: row;
+}
+
+.rowButton{
+    @extend.rowContent;
+    align-self: center;
+    height: 50;
+    padding-top:5;
+    padding-bottom: 5;
+    // background-color: red;
+    
+    // background-color: red;
+}
+
+.buttonMenu{
+    flex: 1;    
+    // margin-left: 10;
+    // margin-right: 15;
+    width: 130;    
+    elevation:2;
+    background-color: #f4f4f4;    
+}
+.buttonText{
+    color:#636363;
+    font-size: 14;
+}
+
+.buttonKeluar{
+    @extend.rounded;
+    margin-top: 15%;
+    height: 50;
+    background-color: #dbf3fd;
+    margin-left: 10;
+    margin-right: 10;
+}
+
+.buttonTextKeluar{
+    color:  #0795c6;
+}
+
+.textVersion{
+    color: #8fbac9;
+    margin-top: 20;
+    text-align: center;
+}

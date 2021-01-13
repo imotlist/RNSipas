@@ -1,0 +1,12 @@
+.surat{
+    background-color: transparent;
+}
+
+.flex{
+    flex : 1;
+}
+
+.detail{
+    @extend .flex;
+    text-align: right;
+}

@@ -1,0 +1,59 @@
+.pageComponent{
+    background-color: transparent;
+    margin-top: 5%;
+}
+
+.titleBar{
+    height: 50;
+    background-color: #fff;   
+    border-bottom-width: 1;
+    border-bottom-color:#c0cfd5;    
+    flex-direction: row;
+    // background-color: red;
+}
+
+.textTitle{
+    font-size: 22;
+    color:#636363;
+    top:10;
+    padding-left: 5%;
+}
+.textSubTitle{
+    @extend.textTitle;
+    font-size: 14;
+    top:20;
+    text-align: right;
+    width:55%;
+    color:	#4ebfe5;
+    font-weight: bold;;
+}
+.textNote{
+    text-align: right;
+    color:#6e6e6e;
+    font-size: 10;
+    margin-right: 10;
+    margin-top: 10;
+}
+
+.textDesc{
+    @extend.textTitle;
+    text-align: center;
+}
+
+.imgContent{
+    // width: 300;
+    height: 350;
+    // align-items: center;
+}
+
+.btnLihat{
+    margin-top: 10%;
+    background-color: #4db4d7;
+    width: 90%;
+    align-self: center;    
+}
+
+.btnText{
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,72 @@
+%dark {
+    color: #636363;
+  }
+
+.mainTitle{
+    margin-left: 0;
+}
+
+.subTitle{
+    margin-top: 5;
+    @extend.rowContent;
+}
+
+.subTitleRight{
+    margin-left: 5;
+}
+
+.textTitle{
+    @extend %dark;
+    font-size: 16;
+}
+
+.textTitleBold{
+    @extend.textTitle;
+    font-weight: bold;;
+}
+
+.textSub{
+    @extend %dark;
+    font-size: 14;
+}
+
+.textSubBold{
+    @extend.textSub;
+    font-weight: bold;
+}
+
+.textDesc{
+    font-size: 12;
+    color: 	#5dbcd2;
+}
+
+.textStatus{
+    @extend.textDesc;
+    color:#eb5757;
+}
+
+.textNote{
+    @extend %dark;
+    font-size: 10;
+}
+
+.rowContent{
+    flex-direction: row;
+}
+
+.rounded{
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+}
+
+.iconStaf{
+    @extend.rounded;
+    width: 40;
+    height: 40;
+}
+
+.iconAlignTop{
+    height: 100%;
+}

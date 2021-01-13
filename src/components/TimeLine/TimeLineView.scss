@@ -1,0 +1,33 @@
+.defaultPadding{
+    padding-top:10;
+    padding-left:10;
+}
+.leftColumn{
+    @extend .defaultPadding;
+    width: 20%;
+    
+}
+
+.rightColumn{
+    @extend .defaultPadding;    
+    width: 80%;
+}
+
+.rowContent{
+    flex-direction: row;
+}
+
+.dash{
+    position: absolute;
+    background-color: #6f6f6f;
+    height: 120%;
+    width: 2;
+    top:40;
+    left:60%;
+    z-index: -1;
+    
+}
+
+.lastIndex{
+    height: 250;
+}

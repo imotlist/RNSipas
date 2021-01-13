@@ -1,0 +1,25 @@
+.rounded{
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+}
+
+.containerSearch{
+    background-color: transparent;
+    width: 100%;
+    border-top-width: 0;
+    border-bottom-width: 0;    
+}
+
+.inputContainerSearch{
+    @extend.rounded;
+    background-color:#fff;
+    padding-left: 5%;
+    elevation:5;    
+}
+
+.inputSearch{
+    background-color:#fff;
+    font-size: 14;
+}

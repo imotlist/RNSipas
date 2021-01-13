@@ -1,0 +1,43 @@
+.defaultPadding{
+    padding-top:10;
+    padding-left:10;
+}
+.leftColumn{
+    @extend .defaultPadding;
+    width: 20%;
+    
+}
+
+.rightColumn{
+    @extend .defaultPadding;    
+    width: 80%;
+}
+
+.rowContent{
+    flex-direction: row;
+}
+
+.dash{
+    background-color: #6f6f6f;
+    height: 80%;
+    width: 3;
+    bottom:10;
+    left:40%;
+    z-index: -1;
+    
+}
+
+.lastIndex{
+    height: 250;
+}
+
+.approvalContainer{
+    border-top-width: 0;
+    margin-top: 0;
+}
+
+.leftColumn{
+    @extend .defaultPadding;
+    width: 20%;
+    
+}

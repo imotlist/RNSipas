@@ -1,0 +1,57 @@
+.data{
+    color:red
+}
+
+.pageImage{
+    // width: 200;
+    margin-top: 10%;
+    height: 350;
+    margin-bottom: 5%;
+}
+
+.center{
+    text-align: center;
+}
+
+.white{
+    @extend .center;
+    color: #ffffff;
+}
+
+.dotActive{
+    background-color: #1DA7D0;
+    margin-bottom: 60%;
+}
+
+.dotBlur{
+    background-color: #B3E5FC;
+    margin-bottom: 60%;
+}
+
+.btnSkip{
+    width: 100;
+    padding-top: 10;
+    padding-right: 10;
+    padding-bottom: 10;
+    padding-left: 10;
+}
+
+.btnLanjut{
+    background-color: #1DA7D0;
+    width: 100;
+    padding-top: 10;
+    padding-right: 10;
+    padding-bottom: 10;
+    padding-left: 10;
+    border-top-left-radius: 50;
+    border-top-right-radius: 50;
+    border-bottom-left-radius: 50;
+    border-bottom-right-radius: 50;
+}
+
+.btnMasuk{
+    @extend .btnLanjut;
+    width: 330;
+    height: 50;
+    padding-top: 15;
+}

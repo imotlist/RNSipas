@@ -1,0 +1,35 @@
+.pageContainer{
+    background-color: #dee0fc;
+    height: 100%;
+}
+
+.pageImage{
+    // width: 100;
+    height: 400;
+    margin-top: 20%;
+}
+
+.pageTitle{
+    font-size: 24;
+    font-weight: bold;
+    color: #2d93ef;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pageDesc{
+    font-size: 16;
+    color: #2d93ef;
+    text-align: center;
+}
+
+.pageText{
+    margin-top: 10;
+    font-size:12;
+    color: #6e6e6e;
+    text-align: center;
+}
+.textDanger{
+    font-size: 10;
+    color:#ff5757;
+    text-align: center;
+}

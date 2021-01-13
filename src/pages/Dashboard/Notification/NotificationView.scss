@@ -1,0 +1,50 @@
+.pageContainer{
+    background-color: transparent;
+}
+
+.pageHeader{
+    padding-left: 10;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+.textTitle{
+    margin-top: 30;
+    margin-bottom: 10;
+    font-size: 22;
+    color:#636363;
+}
+
+.textSub{
+    @extend.textTitle;
+    margin-top: 5;
+    margin-bottom: 10;
+    font-size: 16;
+}
+
+.listView{
+    min-height: auto;
+    padding-left: 5;
+    padding-right: 5;
+    margin-bottom: 100;
+    // background-color: red;
+}
+
+.containerSearch{
+    background-color: transparent;    
+    width: 100%;
+    border-top-width: 0;
+    border-bottom-width: 0;    ;
+    padding-left: 0;
+}
+
+.inputContainerSearch{
+    background-color: #fff;
+    padding-left: 5%;
+    elevation:2;    
+}
+
+.inputSearch{
+    background-color: #fff;
+    font-size: 14;
+}

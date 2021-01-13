@@ -1,0 +1,662 @@
+$dark    : #323639; 
+$white   : #FFFFFF; 
+
+$blue100 : #B3E5FC; // button
+$blue200 : #49C2EE; // button di main menu
+$blue300 : #33B4E1; // intro dot indicator
+$blue400 : #1DA7D0; // detail tampilan detail
+$blue500 : #0093C4; // main
+$blue600 : #4C82F1; // menu disposisi
+$blue700 : #2F80ED; // keterangan no surat
+$blue800 : #007AFF; // login via qr
+$blue900 : #028BB9; 
+
+$purple100 : #8f8cff;
+
+$grey100 : #F4F4F4;
+$grey200 : #EDEDED;
+$grey300 : #A2A2A2;
+$grey400 : #727272; //menu asisten
+$grey500 : #696D70;
+$grey600 : #536066;
+$grey700 : #565656;
+
+$red100  : #E6595E; 
+$red200  : #F34444; //button detail
+$red300  : #FF6464; // icon badge
+
+$orange200 : #f5ad42;
+$orange300 : #ff9a3b;
+$orange400 : #ff7226;
+
+$green100 : #e7ffae;
+$green200 : #67C590;
+$green300 : #5AC572;
+
+@font-face {
+    font-family: 'Opensans';
+    src: url("../../public/font/OpenSans-Reguler.ttf") format("truetype");
+}
+
+$mainFont : "OpenSans-Reguler";
+
+.bgGrey200{
+    background-color: $grey200;
+}
+
+@mixin rounded($scale){
+    border-top-left-radius: $scale;
+    border-top-right-radius: $scale;
+    border-bottom-left-radius: $scale;
+    border-bottom-right-radius: $scale;    
+}
+
+@mixin bgItem($tipe) {
+    @if $tipe == pdf {
+      background-color: $red100;
+    } @else if $tipe == sdoc {
+      background-color: $blue200;
+    } @else if $tipe == xls {
+      background-color: $green200;
+    } @else if $tipe == doc {
+      background-color: $blue800;
+    } @else {
+      background-color: $grey400;
+    }
+}
+
+@mixin borderBlock($width, $color){
+    border-top-width: $width;
+    border-right-width: $width;
+    border-bottom-width: $width;
+    border-left-width: $width;
+    border-color: $color;    
+}
+
+.paddingComponent{
+    padding-top:10;
+    padding-left:10;
+    padding-bottom:10;
+    padding-right:10;
+}
+
+.paddingPage{
+    padding-left: 5;
+    padding-right: 5;
+}
+
+.fullPageContainer{
+    background-color: $white;
+    height: 100%;
+}
+
+.pageContainer{
+    @extend.paddingPage;
+    background-color: $white;
+}
+
+
+.btnBlue100{
+    color:$white;
+    background-color: $blue100;
+}
+
+.btnBlue200{
+    color:$white;
+    background-color: $blue200;
+}
+
+.btnDefault{
+    @extend .square;
+    color:$white;
+    background-color: $blue700;
+    height: 45;
+}
+
+.btnInfo{
+    @extend .btnDefault;
+    color:$white;
+    background-color: $blue500;
+}
+
+.btnSuccess{
+    @extend .btnDefault;
+    color:$white;
+    background-color: $green300;
+}
+
+.btnDanger{
+    @extend .btnDefault;
+    color:$white;
+    background-color: $red200;
+}
+
+.btnWarning{
+    @extend .btnDefault;
+    color:$white;
+    background-color: $orange200;
+}
+
+.btnNetral{
+    @extend .btnDefault;
+    color:$white;
+    background-color: $grey300;
+}
+
+
+@mixin outlineColor($color){
+    height: 44;
+    border-top-color: $color;
+    border-right-color: $color;
+    border-bottom-color: $color;
+    border-left-color: $color;
+    
+}
+
+.btnDefaultOutline{
+    @include outlineColor($blue700)
+}
+
+.btnInfoOutline{
+    @include outlineColor($blue500)
+}
+
+.btnSuccessOutline{
+    @include outlineColor($green300)
+}
+
+.btnDangerOutline{
+    @include outlineColor($red200)
+}
+
+.btnWarningOutline{
+    @include outlineColor($orange200)
+}
+
+
+.textButton{
+    color: $white;
+    font-size:14;
+    text-transform: capitalize;
+}
+
+.textDefaultOutline{
+    color: $dark;
+    font-size: 14;
+    text-transform: capitalize;
+}
+
+.textInfoOutline{
+    @extend .textDefaultOutline;
+    color : $blue500;
+}
+
+.textSuccessOutline{
+    @extend .textDefaultOutline;
+    color : $green300;
+}
+
+.textDangerOutline{
+    @extend .textDefaultOutline;
+    color : $red200;
+}
+.textWarningOutline{
+    @extend .textDefaultOutline;
+    color : $orange200;
+}
+
+.textAreaContainer{
+    @include rounded(5);
+    @extend .fullBorder;
+    height: 150;
+    background-color: $grey100;    
+
+}
+
+.textCheckBox{
+    @extend .textInfo;
+    color : $dark;
+}
+
+.colorWhite{
+    color : $dark;
+}
+
+.linkText{
+    color:$blue800;
+}
+
+.pageTitle{
+    color: $dark;
+    font-family: $mainFont;
+    font-weight: bold;
+    font-size: 24;
+    text-transform: uppercase;
+}
+
+.pageDesc{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 16;
+}
+
+.headTitle{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 18;
+}
+
+.headTitleLight{
+    color: $white;
+    font-family: $mainFont;
+    font-size: 18;
+}
+
+.headDesc{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 14;
+}
+
+.textTitle{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 16;
+}
+
+.textDesc{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 14;
+}
+
+.textInfo{
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 12;
+}
+
+.textDanger{    
+    color:$red100;
+    // font-family: $mainFont;
+    
+}
+
+.pageImage{
+    height: 400;
+    margin-top: 20%;
+}
+
+.pageMedium{
+    height: 100;
+    margin-top: 20%;
+}
+
+.square{
+    @include rounded(0);
+}
+
+.rounded{
+    @include rounded(3);
+}
+
+.fullrounded{
+    @include rounded(100);
+}
+
+.containerSearch{
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    border-top-width: 0;
+    border-bottom-width: 0;    
+}
+
+.inputContainerSearch{
+    @include rounded(100);
+    background-color:$white;
+    padding-left: 5%;
+    elevation:5;    
+}
+
+.inputSearch{
+    background-color:$white;
+    font-size: 14;
+}
+
+.mailboxHeader{
+    background-color: $blue300;
+    height: 120;
+}
+
+.tabBar {
+    background-color: $blue300;    
+}
+
+.tabItem{
+    flex: 1;
+    align-items: center;    
+}
+.tabIndicator{
+    background-color: $white;
+}
+.container{
+    background-color: #a3a3a3;
+}
+
+.rowContent{
+    flex-direction: row;
+    width: 100%;
+    justify-items: center;   
+}
+
+.rowContentReverse{
+    @extend .rowContent;
+    flex-direction: row-reverse;
+}
+
+.dokumenItem{
+    width   :160;
+    height  :130;
+    background-color: #5AC572;
+    margin-right:5;    
+}
+
+.dokumenPdf{
+    @extend .dokumenItem;
+    @include bgItem(pdf)
+}
+
+.dokumenSdoc{
+    @extend .dokumenItem;
+    @include bgItem(sdoc)
+}
+
+.dokumenXls{
+    @extend .dokumenItem;
+    @include bgItem(xls)
+}
+
+.dokumenDoc{
+    @extend .dokumenItem;
+    @include bgItem(doc)
+}
+
+.dokumenOther{
+    @extend .dokumenItem;
+    @include bgItem(other)
+}
+
+.dokumenDesc{
+    background-color: $white;
+    opacity: 0.75;
+    height: 50;
+    width: 100%;
+    padding-top: 5;
+    padding-left: 5;
+    position: absolute;
+    bottom: 0;
+}
+
+.dokumenImage{
+    align-items: center;
+}
+
+.dokumenImageText{
+    color:$white;
+    font-size: 28;
+    text-transform: uppercase;
+    margin-top:20
+}
+
+.dokumenTitle{
+    color:$dark;
+    font-size: 14;
+}
+.dokumenSubTitle{
+    color:$dark;
+    font-size: 10;
+}
+
+.badgeRed200{
+    background-color:$red200;            
+    color:$white;
+    // height: 50;
+}
+
+.badgeRahasia{
+    @extend .badgeRed200;
+    padding-left:5;
+    padding-right:5;
+    font-size:12;
+    margin-right: 5;
+}
+
+.badge{
+    background-color: $dark;
+    color: $white;
+    font-size: 10;
+    padding-left:5;
+    padding-right:5;
+    margin-right: 5;
+    text-align: center;
+    @include rounded(100);
+}
+
+.badgeWarning{
+    @extend .badge;
+    background-color : $orange300;
+}
+.badgeDanger{
+    @extend .badge;
+    background-color : $red300;
+}
+
+.badgeInfo{
+    @extend .badge;
+    background-color : $blue300;
+}
+
+.badgeSuccess{
+    @extend .badge;
+    background-color : $green200;
+}
+
+.badgeDefault{
+    @extend .badge;
+    background-color : $grey300;
+}
+
+
+// ---Detail Page ---
+.navTitle{
+    @extend .rowContent;
+    padding-top:20;
+    padding-bottom: 10;    
+}
+
+.detailHeadConteiner{
+    background-color: $blue100;
+    padding-left:10;
+    padding-bottom:20;
+}
+
+.forwardHead{
+    @extend .detailHeadConteiner;
+    background-color: $blue400;
+}
+
+.detailHeadDisposisi{
+    @extend .detailHeadConteiner;
+    background-color: $blue100;
+}
+
+.detailHeadKoreksi{
+    @extend .detailHeadConteiner;
+    background-color: $green100;
+}
+
+.detailHeadTitle{
+    color: #000;
+    font-size: 24;
+    font-weight: bold;
+}
+
+.detailSubTitle{
+    color:$dark;
+    font-size: 18;    
+    width: 80%;
+}
+
+.detailHeadImage{
+    height: 120;
+    width: 150;
+}
+
+.absoluteIcon{
+    position: absolute;
+    bottom: -20;
+    right: -10;
+}
+
+//----Header Detail end ----
+
+//--- border box
+.fullBorder{
+    border-top-width: 1;
+    border-right-width: 1;
+    border-bottom-width: 1;
+    border-left-width: 1;
+    border-color: $grey300;
+}
+
+.noBorder{
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;        
+}
+
+.rowBorder{
+    border-top-width: 1;
+    border-color: $grey300;
+    height: 60;
+    width: 100%;
+    flex-direction: row;
+}
+
+.column{
+    flex:1;
+    padding-top:5;
+    padding-left:5;
+    // @extend .fullBorder;
+}
+
+.columnBlock{
+    @extend .fullBorder;
+    flex : 1;
+    padding-top:5;
+    padding-bottom: 5;
+    margin-left:5;
+    margin-right: 5;
+    align-items: center;
+}
+
+.columnHighLight{
+    @extend .columnBlock;
+    @include borderBlock(1, $blue200 );
+}
+
+.columnBorderRIght{
+    @extend .column;
+    border-right-width: 1;
+    border-color: $grey300;
+}
+//--- surat detail
+.suratSubTitle{
+    color : $grey400;
+    font-size: 12;
+}
+
+.suratDesc{
+    color:$dark;
+    font-size: 12;
+    font-weight: bold;
+}
+
+.footerBar{
+    position: absolute;
+    flex:1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:$white;
+    flex-direction:row;
+    height:70;
+    align-items:center;    
+    border-top-width: 1;
+    border-top-color: $grey200;
+}
+
+.pageMenu{
+    // align-items:center;    
+    padding-left:10;
+    padding-right:10;
+    flex:1;
+}
+
+.iconProfile{
+    @include rounded(100);
+    height  :   50;
+    width   :   50;
+    border: 1px solid $white;
+    margin-right: 5;
+    margin-top: 5;
+}
+
+.listTimeLine{
+    @extend .fullBorder;
+    margin-top:5;
+    padding-bottom:5;
+    // margin-right:5;
+    margin-bottom:5;
+    // margin-left:5;
+    // flex-direction: row;    
+    // min-height: 170;
+    // height: 190;
+    // max-height: 210;
+}
+
+.horizontalSeparator{
+    border-bottom-width: 1;
+    border-bottom-color: $grey300;
+    margin-top:5;
+    margin-bottom:5;
+}
+
+.iconShape{    
+    border-top-left-radius: 100;
+    border-top-right-radius: 100;
+    border-bottom-left-radius: 100;
+    border-bottom-right-radius: 100;
+    align-items: center;    
+    background-color: #ffffff;
+    height: 50;
+    width: 50;
+}
+
+.iconMasuk{
+    @extend .iconShape;
+    background-color: $blue300;
+}
+
+.iconDisposisi{
+    @extend .iconShape;
+    background-color: $red300;
+}
+
+.iconDraf{
+    @extend .iconShape;
+    background-color: $purple100;
+}

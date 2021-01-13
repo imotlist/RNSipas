@@ -1,0 +1,32 @@
+.class{
+    color:transparent;
+}
+
+.inputRadius{
+    border-bottom-left-radius: 50;
+    border-bottom-right-radius: 50;
+    border-top-left-radius: 50; 
+    border-top-right-radius: 50;
+}
+
+.inputContainer{
+    @extend.inputRadius;
+    // border: 1px solid #636363;    
+    height: 45;
+    padding:0;
+    padding-left: 4%;
+    padding-right: 2%;
+    background-color: #f4f4f4;
+    border-bottom-width: 0;
+    // background-color: green;
+}
+
+.inputOuter{
+    height: 40;    
+}
+
+.textInput{    
+    font-size: 14;          
+    padding-left: 3%;
+    width: 80%;   ;    
+}

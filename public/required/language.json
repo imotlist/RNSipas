@@ -1,0 +1,162 @@
+{
+	
+	"application_title"								: "TEO Mobile",
+
+	"logout"										: "Keluar Aplikasi",
+	"logout_confirm"								: "Apakah anda yakin ingin keluar aplikasi?",
+
+	
+	"user_keluar_app"								: "Keluar Aplikasi",
+
+	
+	"menu_tugas"									: "Tugas",
+	"menu_suratmasuk"								: "Masuk",
+	"menu_riwayat" 									: "Terkirim",
+	"menu_koreksi" 									: "Draf",
+	"menu_asistensi" 								: "PGS",
+
+	
+	"list_masuk_combo_filter"						: "[{'text':'Semua Surat Masuk', 'value':'surat_all'},{'text':'Disposisi Masuk', 'value':'disposisimasuk'},{'text':'Nota Dinas Masuk', 'value':'notadinas'},{'text':'Surat Masuk Eksternal', 'value':'suratmasuk_eks'},{'text':'Surat Masuk Internal', 'value':'suratmasuk_int'},{'text':'Surat Diteruskan', 'value':'teruskan'},{'text':'Surat Ditandai Revisi', 'value':'tercabut'}, {'text':'Surat Tembusan', 'value':'tembusan'}]",
+	"list_riwayat_combo_filter"						: "[{'value':'read', 'text':'Semua Surat Terkirim'},{'value':'disposisi', 'text':'Disposisi Terkirim'},{'value':'notadinas', 'text':'Nota Dinas Terkirim'},{'value':'eksternal', 'text':'Surat Eksternal Terkirim'},{'value':'internal', 'text':'Surat Internal Terkirim'},{'value':'tercabut', 'text':'Surat Ditandai Revisi'}, {'text':'Surat Tembusan', 'value':'tembusan'}]",
+	"list_koreksi_combo_filter"						: "[{'value': 'read', 'text':'Semua Draf'},{'value': 'setuju', 'text':'Draf Disetujui'},{'value': 'tolak', 'text':'Draf Ditandai Revisi'},{'value': 'blmtindak', 'text':'Draf Belum ditindak'}]",
+	
+	
+	"list_tugas_combo_sorter"						: "[{'display': 'Urutkan status baca', 'value' :'disposisi_masuk_isbaca'},{'display': 'Urutkan waktu terima', 'value' :'disposisi_tgl'},{'display': 'Urutkan perihal surat', 'value' :'surat_perihal'},{'display': 'Urutkan jenis surat', 'value' :'jenis_nama'},{'display': 'Urutkan pengirim surat', 'value' :['surat_pengirim', 'unit_source_nama']}]",
+	"list_masuk_combo_sorter"						: "[{'display': 'Urutkan status baca', 'value' :'disposisi_masuk_isbaca'},{'display': 'Urutkan waktu terima', 'value' :'disposisi_tgl'},{'display': 'Urutkan perihal surat', 'value' :'surat_perihal'},{'display': 'Urutkan jenis surat', 'value' :'jenis_nama'},{'display': 'Urutkan pengirim surat', 'value' :['surat_pengirim', 'unit_source_nama']}]",
+	"list_riwayat_combo_sorter"						: "[{'display': 'Urutkan status baca', 'value' :'disposisi_sorter'},{'display': 'Urutkan waktu terima', 'value' :'disposisi_tgl'},{'display': 'Urutkan perihal surat', 'value' :'surat_perihal'},{'display': 'Urutkan jenis surat', 'value' :'jenis_nama'},{'display': 'Urutkan pengirim surat', 'value' :['surat_pengirim', 'unit_source_nama']}]",
+	"list_koreksi_combo_sorter"						: "[{'display': 'Urutkan status baca', 'value' :'disposisi_masuk_isbaca'},{'display': 'Urutkan waktu terima', 'value' :'disposisi_tgl'},{'display': 'Urutkan perihal surat', 'value' :'surat_perihal'},{'display': 'Urutkan jenis surat', 'value' :'jenis_nama'},{'display': 'Urutkan pengirim surat', 'value' :['surat_pengirim', 'unit_source_nama']}]",
+	
+	
+	"list_tugas_combo_sorter_direction"				: "[{'display': 'A - Z', property: 'ASC'},{'display': 'Z - A', 'property': 'DESC'}]",
+	"list_masuk_combo_sorter_direction"				: "[{'display': 'A - Z', property: 'ASC'},{'display': 'Z - A', property: 'DESC'}]",
+	"list_riwayat_combo_sorter_direction"			: "[{'display': 'A - Z', property: 'ASC'},{'display': 'Z - A', property: 'DESC'}]",
+	"list_koreksi_combo_sorter_direction"			: "[{'display': 'A - Z', property: 'ASC'},{'display': 'Z - A', property: 'DESC'}]",
+
+	"tombol_muat_ulang"								: "Muat Ulang",
+
+	
+	"prioritas_agenda_surat"						: "Prioritas Surat",
+
+	
+	"upload_berkas_button_pane"						: "Upload Dokumen",
+	"upload_berkas_popup"							: "Upload Dokumen",
+	"upload_berkas_button"							: "Upload Dokumen",
+	"tautan_button_pane"							: "Link",
+	"tautan_popup"									: "Link",
+	"download_berkas"								: "Unduh",
+	"online_dokumen_popup"							: "Online Dokumen",
+	"online_dokumen_popup_nama"						: "Nama Dokumen",
+	"tautan_popup_tentang"							: "Tentang/Perihal",
+	"tautan_popup_perihal"							: "Isi",
+	"berkas_template_lookup"						: "Pilih Template",
+	"berkas_template_lookup_preview"				: "Preview Template",
+
+	
+	"suratmasuk_list"								: "Kotak Masuk",
+	"suratmasuk_prop"								: "Kotak Masuk",
+	"prioritas_suratmasuk_list"						: "Prioritas",
+	"suratmasuk_riwayat_disposisi"					: "Riwayat",
+	"suratmasuk_disposisi"							: "Disposisi",
+	"suratmasuk_internal"							: "Memo Internal",
+	"suratmasuk_eksternal"							: "Surat Masuk Eksternal",
+
+	
+	"notadinas_list" 								: "Nota Dinas",
+	"notadinas_prop" 								: "Nota Dinas",
+	"notadinas_forward_button"						: "Teruskan",
+	"notadinas_riwayat_button"						: "Riwayat",
+	"notadinas_log_aktifitas_button"				: "Log Aktifitas",
+
+	
+	"disposisi_masuk_list"							: "Disposisi Masuk",
+	"disposisi_masuk_prop"							: "Disposisi Masuk",
+	"prioritas_disposisi_masuk_list"				: "Prioritas",
+	"disposisi_masuk_riwayat_disposisi_button"		: "Riwayat",
+	"disposisi_masuk_forward_disposisi_button"		: "Teruskan",
+	"disposisi_masuk_forward_aksi_title"			: "Respon Anda",
+
+	
+	"disposisi_masuk_forward_popup"						: "Disposisi",
+	"disposisi_masuk_forward_popup_disposisi"			: "Kirim Sebagai Disposisi",
+	"disposisi_masuk_forward_popup_notadinas"			: "Kirim Sebagai Nota Dinas",
+	"disposisi_masuk_forward_popup_rahasia"				: "Rahasiakan arahan dan uraian",
+	"disposisi_masuk_forward_popup_container_perintah" 	: "Arahan",
+	"disposisi_masuk_forward_popup_combo_perintah"		: "(pilih arahan)",
+	"prioritas_disposisi_masuk_forward_popup"			: "Prioritas",
+	"prioritas_disposisi_masuk_forward_popup_'text'"		: "Prioritas Surat",
+
+	
+	"riwayat_disposisi_list"						: "Terkirim",
+	"riwayat_disposisi_prop"						: "Riwayat",
+	"riwayat_disposisi_batal"						: "Pembatalan Disposisi",
+	"riwayat_disposisi_batal_blm_baca"				: "Batalkan disposisi yang belum terbaca",
+	"riwayat_disposisi_batal_semua"					: "Batalkan semua disposisi",
+	"riwayat_disposisi_batal_semua_turunan"			: "Batalkan semua disposisi dan turunannya",
+
+	
+	"koreksi_surat_list"							: "Koreksi Surat",
+	"koreksi_surat_prop"							: "Koreksi Surat",
+
+	
+	"draft_session"									: "Draf",
+	"draft_list"									: "Draf Untuk Dikoreksi",
+
+	
+	"asistensi_list"								: "Pelaksana Harian",
+	"atasan_list"									: "Daftar Pimpinan",
+
+	
+	"log_aktifitas_list"							: "Log Aktifitas",
+	"log_aktifitas_button"							: "Log Aktifitas",
+
+	
+	"suratkeluar_list"								: "Surat Keluar",
+	"suratkeluar_eksternal_tab"						: "Surat Keluar Eksternal",
+	"suratkeluar_internal_tab"						: "Surat Keluar Internal",
+
+	
+	"surat_prop_rating_tombol" 						: "Beri Rating",
+	"surat_prop_rating" 							: "Beri Rating",
+	"surat_prop_rating_tombol_lihat"				: "Daftar Pemberi Rating",
+	"surat_prop_rating_info" 						: "Rating",
+	"internal_masuk_approval_popup_rating_fieldset" : "Memberi Rating",
+	"internal_masuk_approval_popup_rating_komentar" : "Rating",
+	"internal_masuk_rating_popup" 					: "Rating",
+	"internal_masuk_rating_popup_komentar" 			: "Rating",
+	"internal_masuk_rating_popup_fieldset" 			: "Daftar Pemberian Rating",
+	"internal_masuk_rating_popup_tombol" 			: "Beri Rating",
+
+
+	"surat_israhasia" 								: "Kunci Berkas",
+	"hapus_permanen"								: "Hapus Permanen",
+	"surat_aktifasi" 								: "Aktifasi Ulang",
+	"resi_surat" 									: "CETAK RESI",
+	"pengarahan_surat" 								: "KIRIM",
+	"surat_kirim" 									: "KIRIM",
+	"surat_pengajuan" 								: "AJUKAN PENYETUJUAN",	
+	"surat_atur_lokasi" 							: "Atur Lokasi",
+	"surat_atur_korespondensi" 						: "Atur Korespondensi",
+
+
+	"disposisi_israhasia" 							: "Kunci",
+
+	"sla_unit_default_list" 						: "Daftar SLA Unit Default",
+	"sla_unit_default" 								: "Daftar SLA Default",
+
+	"usebalas_desc" 								: "<span class='alternative'>Surat ini akan mendapatkan prioritas <span class='bold'>selesai</span> ketika surat sudah dibalas, atau ada surat keluar eksternal yang berkorespondensi dengan surat ini</span>",
+	"usesla_desc"									: "<span class='alternative'>Mengajukan surat untuk menggunakan SLA kepada unit yang dituju</span>",
+	"use_retensi_fieldlabel"						: "Batas distribusi surat hanya sampai :",
+
+
+	"imasuk_trf_desc_popup"							: "<span class='alternative'>Transfer Surat Masuk Internal ke Surat Keluar Eksternal sebagai draft ke unit lain yang dituju</span>",
+	"imasuk_rating_popup_desc"						: "<span class='alternative'>Rating digunakan untuk memberikan penilaian pada surat keluar internal yang telah dibuat, disetujui, dan dikirimkan oleh pegawai dari unit lain atau dalam satu unit yang sama.</span>",
+	"imasuk_rating_warning"							: "<div class='sub'text' warning'><span class='badge badge-solid margin-right-4'><i class='icon ion-md-warning amber-600-i'></i></span>Anda sudah pernah memberi rating pada surat ini</div>",
+	"imasuk_approval_desc"							: "<span class='alternative'>Setujui surat intrenal yang masuk sebelum anda bisa mendistribusikannya kepada pegawai</span>",
+
+	"multi_account_title"							: "Pilih Profil",
+	"multi_account_desc"							: "Tap pada list untuk ganti staf",
+	"multi_account_modal_warning_title"				: "Peringatan",
+	"multi_account_modal_warning_msg"				: "Status staf ini sedang aktif",
+	"multi_account_modal_change_title"				: "Ganti profil",
+	"multi_account_modal_change_msg"				: "Apakah anda yakin?"
+}

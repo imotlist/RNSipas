@@ -1,0 +1,55 @@
+.pageComponent{
+    background-color: transparent;
+    padding-top: 10;
+    padding-right: 5;    
+    padding-left: 5;
+    align-items: center;
+}
+.titleBar{
+    height: 50;
+    background-color: #fff;   
+    flex-direction: row;
+    // background-color: red;
+}
+
+.textHeader{
+    font-size: 22;
+    color:#636363;
+    top:10;
+    padding-left: 5%;
+}
+
+.shadow{
+    elevation:2;  
+}
+
+.rowContent{
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 95%;
+    margin-top: 5;
+    margin-bottom: 5;
+    @extend.shadow;
+}
+
+.imgTumb{
+    width: 100;
+    height:80;
+}
+
+.textTitle{
+    font-size: 18;
+    font-weight: bold;
+    color: 	#43474b;
+    margin-bottom: 5;
+}
+
+.textSub{
+    font-size:14;
+    color: 	#43474b;
+}
+
+.rightContent{
+    padding-top: 10;
+    padding-left: 10;
+}

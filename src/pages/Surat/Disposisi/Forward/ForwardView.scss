@@ -1,0 +1,19 @@
+.headerPane{
+    padding-top:10;
+    padding-right: 10;
+    padding-bottom: 10;
+    padding-left: 10;
+    margin-bottom: 15;
+    background-color: white;
+}
+
+.pane{
+    @extend .headerPane;
+    min-height: 200;
+    padding-top: 30;
+}
+
+.iconJenis{
+    width: 80;
+    height: 60;
+}
